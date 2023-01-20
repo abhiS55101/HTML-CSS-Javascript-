@@ -16,7 +16,7 @@ body{
     position: fixed;
     width: 60px;
     height: 100%;
-    background: #3e0748;
+    background: #027fff;
     transition: 0.5s;
     overflow: hidden;
 }
@@ -36,10 +36,13 @@ body{
     position: relative;
     width: 100%;
     list-style: none;
+    transition: 0.3s ease-in-out;
 }
 
 .navigation ul li:hover{
-    background: #ea1d63;
+    background: #17234d;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
 }
 
 .navigation ul li a{
@@ -51,6 +54,13 @@ body{
     color: #fff;
 }
 
+.navigation ul li a:hover{
+    color: #ffbf00;
+    transition: 0.2s ease-in-out;
+    filter: drop-shadow(0 0 2px #ffbf00)
+    drop-shadow(0 0 5px #ffbf00)
+}
+
 .navigation ul li a .icon{
     position: relative;
     display: block;
@@ -59,6 +69,15 @@ body{
     line-height: 60px;
     text-align: center;
     font-size: 24px;
+    transition: 0.2s ease-in-out;
+}
+
+.navigation ul li a .icon:hover{
+    color: #ffbf00;
+    transform: scale(1.20);
+    transition: 0.2s ease-in-out;
+    filter: drop-shadow(0 0 2px #ffbf00)
+
 }
 
 .navigation ul li a .title{
